@@ -1,15 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { RepairRecordComponent } from './repair-record/repair-record.component';
+import { CommonModule } from '@angular/common';
+import { RepairHistoryComponent } from './repair-history/repair-history.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'repair-record'
-  },
-  {
-    path: 'repair-record',
-    component: RepairRecordComponent
+    component: RepairHistoryComponent
   }
 ];
 
@@ -17,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class RepairRecordRoutingModule { }
+export class RepairHistoryRoutingModule { }

@@ -9,17 +9,23 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutsModule } from './shared/layouts/layouts.module';
+import { LoginComponent } from './feature-modules/login/login.component';
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     RouterModule,
     AppRoutingModule,
-    LayoutsModule
+    LayoutsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

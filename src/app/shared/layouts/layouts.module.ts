@@ -5,6 +5,9 @@ import { FooterComponent } from './footer/footer.component';
 import { EmptyLayoutComponent } from './layouts/empty-layout/empty-layout.component';
 import { MainLayoutComponent } from './layouts/main-layout/main-layout.component';
 import { RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialAllModule } from '../materials/material-all/material-all.module';
+import { MatToolbarModule, MatButtonModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,9 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    MatToolbarModule,
+    MatButtonModule
   ],
   exports: [
     HeaderComponent,
