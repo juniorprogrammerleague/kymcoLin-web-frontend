@@ -18,8 +18,5 @@ export class RepairManagementService {
 
   constructor(private http: HttpClient) { }
 
-  getRepairRecord() {
-    return this.http
-      .post(`${this.repairUrl}/GetByLicensePlateNo`, { licensePlateNo: this.licenseNo });
-  }
+
 }

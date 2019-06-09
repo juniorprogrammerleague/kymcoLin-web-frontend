@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, DatePipe } from '@angular/common';
 
 import { RepairMainRoutingModule } from './repair-main-routing.module';
 import { RepairMainComponent } from './repair-main/repair-main.component';
@@ -25,6 +25,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
     HttpClientModule,
     SharedModule,
     MatTabsModule,
-  ]
+  ],
+  providers: [DatePipe]
 })
 export class RepairMainModule { }
