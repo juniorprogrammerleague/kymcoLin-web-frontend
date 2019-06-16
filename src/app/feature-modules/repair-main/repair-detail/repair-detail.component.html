@@ -1,3 +1,127 @@
-<p>
-  repair-detail works!
-</p>
+<div class="container">
+
+  <div class="form-group">
+    <div class="form-control">
+      <label>車牌 :
+        <input hidden />
+      </label>
+    </div>
+    <div class="form-control"></div>
+  </div>
+
+  <div class="form-group">
+    <div class="form-control">
+      <label>維修日期 :
+        <input />
+      </label>
+    </div>
+    <div class="form-control">
+      <label>進廠時間 :
+        <input />
+      </label>
+    </div>
+    <div class="form-control">
+      <label>維修人員 :
+        <input />
+      </label>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="form-control">
+      <label>上次里程 :
+        <input />
+      </label>
+    </div>
+    <div class="form-control">
+      <label>現在里程 :
+        <input />
+      </label>
+    </div>
+    <div class="form-control">
+      <label>行駛里程 :
+        <input />
+      </label>
+    </div>
+  </div>
+
+
+  <div class="form-group">
+    <div class="form-control">
+      <label>備註 :
+        <input />
+      </label>
+    </div>
+  </div>
+
+</div>
+
+<a mat-flat-button routerLink="#" style="float: right; margin-right: 35px;">
+  <mat-icon>playlist_add</mat-icon>&nbsp;新增項目
+</a>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>類別</th>
+      <th>品項</th>
+      <th>數量</th>
+      <th>單價</th>
+      <th>小計</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><input /></td>
+      <td><input /></td>
+      <td><select></select></td>
+      <td><input readonly /></td>
+      <td><input readonly /></td>
+      <td>
+        <a routerLink="#">
+          <mat-icon>delete</mat-icon>
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5"></td>
+      <td>
+        <mat-icon (click)="addRepairDetail()">add_box</mat-icon>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="summary-area">
+
+  <div class="form-group">
+    <div class="form-control">
+      <label>總計 :
+        <input hidden />
+      </label>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="form-control">
+      <label>折扣 :
+        <input />
+      </label>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="form-control">
+      <label>應收金額 :
+        <input hidden />
+      </label>
+    </div>
+  </div>
+
+  <div class="btn-group">
+    <a mat-raised-button color="primary" routerLink="#">儲存</a>
+    <a mat-raised-button routerLink="#">取消</a>
+    <!-- <a mat-raised-button color="warn" routerLink="#">刪除</a> -->
+  </div>
+</div>

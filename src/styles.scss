@@ -11,4 +11,13 @@ a{
     color: #000;
 }
 
+/** repair-item-dialog panelClass*/
+.repair-item-dialog .mat-dialog-container { 
+    padding: 0;
+    border-radius: 0;
+    min-width: 700px;
+}
+.repair-item-dialog .mat-dialog-content { 
+      margin: 0;
+}
 

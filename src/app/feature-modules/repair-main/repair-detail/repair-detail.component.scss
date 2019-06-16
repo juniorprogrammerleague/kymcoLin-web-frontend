@@ -1,0 +1,38 @@
+@import url('../scooter-detail/scooter-detail.component.scss');
+
+.table{
+    width: 91%;  
+    margin: 0 35px;
+
+    th{
+        border-bottom: 1.6px #c2c2c2 solid;
+        text-align: left;
+    }
+       
+    tr{
+        height: 2rem;
+        
+        td,th{
+            vertical-align: middle;
+        }
+    }
+
+}
+mat-icon{
+    cursor: pointer;
+}
+.summary-area{
+    margin: 0 30px;
+    float: right;
+    width: 300px;    
+}
+
+.btn-group{
+        float: right;
+        margin: 10px 0;    
+    
+    a{
+        margin-right: 10px;
+    }
+}
+

@@ -7,7 +7,7 @@ import { MainLayoutComponent } from './layouts/main-layout/main-layout.component
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialAllModule } from '../materials/material-all/material-all.module';
-import { MatToolbarModule, MatButtonModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatIconModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,8 @@ import { MatToolbarModule, MatButtonModule } from '@angular/material';
     CommonModule,
     RouterModule,
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule,
   ],
   exports: [
     HeaderComponent,
