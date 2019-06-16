@@ -1,16 +1,18 @@
-<mat-toolbar color="primary" class="mat-elevation-z4">
-  <div style="margin-left: 20px; font-size: 1.5rem;">
-    <a mat-button routerLink="/home">鴻泰車業</a>
+<mat-toolbar color="primary" class="header mat-elevation-z4">
+
+  <div style="margin-left: 20px; font-size: 1rem;">
+    <a mat-button routerLink="/home" style="float: right;">
+      <i class="material-icons icon">home</i>
+    </a>
   </div>
+  <a mat-button routerLink="/repair-main/management">機車維修管理</a>
+  <a mat-button routerLink="/repair-item">維修項目設定</a>
+  <a mat-button routerLink="/repair-history">維修月結查詢</a>
 
-
-  <div style="right:10px; position: absolute;">
+  <!-- <div style="right:10px; position: absolute;">
     <a mat-button routerLink="/home" style="float: right;">
       <i class="material-icons">home</i>
     </a>
-  </div>
-  
+  </div> -->
+
 </mat-toolbar>
-<a mat-button routerLink="/repair-main">機車維修管理</a>
-<a mat-button routerLink="/repair-item">維修項目設定</a>
-<a mat-button routerLink="/repair-history">維修月結查詢</a>

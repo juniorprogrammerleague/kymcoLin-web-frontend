@@ -1,21 +1,21 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { RepairMainComponent } from './repair-main/repair-main.component';
 import { RepairManagementComponent } from './repair-management/repair-management.component';
 import { ScooterDetailComponent } from './scooter-detail/scooter-detail.component';
 import { RepairDetailComponent } from './repair-detail/repair-detail.component';
 import { RepairRecordComponent } from './repair-record/repair-record.component';
+import { RepairSearchComponent } from './repair-search/repair-search.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'main',
+    redirectTo: 'search',
     pathMatch: 'full'
   },
   {
     // 維修紀錄管理_搜尋頁
-    path: 'main',
-    component: RepairMainComponent
+    path: 'search',
+    component: RepairSearchComponent
   },
   {
     // 維修資料管理
@@ -42,7 +42,7 @@ const routes: Routes = [
         component: RepairRecordComponent
       }
     ]
-  }
+  },
 ];
 
 @NgModule({

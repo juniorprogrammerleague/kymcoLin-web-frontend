@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RepairMainComponent } from './repair-main.component';
+import { RepairSearchComponent } from './repair-search.component';
 
-describe('RepairMainComponent', () => {
-  let component: RepairMainComponent;
-  let fixture: ComponentFixture<RepairMainComponent>;
+describe('RepairSearchComponent', () => {
+  let component: RepairSearchComponent;
+  let fixture: ComponentFixture<RepairSearchComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RepairMainComponent ]
+      declarations: [ RepairSearchComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RepairMainComponent);
+    fixture = TestBed.createComponent(RepairSearchComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
