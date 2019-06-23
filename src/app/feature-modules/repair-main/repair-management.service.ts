@@ -8,12 +8,12 @@ export class RepairManagementService {
   private repairUrl = 'api/Repair';
 
   /** 暫存車牌號碼 */
-  private _licenseNo: string = 'HU7-683';
-  get licenseNo() {
-    return this._licenseNo;
+  private licenseNo: string = '';
+  get licensePlateNo() {
+    return this.licenseNo;
   }
-  set licenseNo(value: string) {
-    this._licenseNo = value;
+  set licensePlateNo(value: string) {
+    this.licenseNo = value;
   }
 
   constructor(private http: HttpClient) { }

@@ -28,8 +28,6 @@ export class MatTableComponent implements OnInit {
   ngOnInit() {
     this.initOption();
     this.initMatPaginator();
-
-
   }
 
   initMatPaginator() {

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { RepairManagementService } from '../repair-management.service';
+import { RouterOutlet, Router } from '@angular/router';
 
 @Component({
   selector: 'app-repair-management',
@@ -6,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./repair-management.component.scss']
 })
 export class RepairManagementComponent implements OnInit {
+  @ViewChild(RouterOutlet) routerOutlet: RouterOutlet;
   navLinks = [
     {
       path: 'scooter-detail',
@@ -19,9 +22,13 @@ export class RepairManagementComponent implements OnInit {
       path: 'repair-record',
       label: '維修歷史紀錄'
     }]
-  constructor() { }
+  constructor(private router: Router,
+    public service: RepairManagementService) { }
 
-  ngOnInit() {
+  ngOnInit() { }
+  refresh() {
+    this.router.routeReuseStrategy.shouldReuseRoute = () => false;
+    this.router.onSameUrlNavigation = 'reload';
+    this.router.navigate([this.router.url]);
   }
-
 }

@@ -1,9 +1,8 @@
-<div class="container">
+<div class="container" [(formGroup)]="form" *ngIf="form">
 
   <div class="form-group">
     <div class="form-control">
-      <label>車牌 :
-        <input hidden />
+      <label>車牌 : {{form.value['licensePlateNo']}}
       </label>
     </div>
     <div class="form-control"></div>
@@ -12,17 +11,17 @@
   <div class="form-group">
     <div class="form-control">
       <label>維修日期 :
-        <input />
+        <input formControlName='date' />
       </label>
     </div>
     <div class="form-control">
       <label>進廠時間 :
-        <input />
+        <input formControlName='time' />
       </label>
     </div>
     <div class="form-control">
       <label>維修人員 :
-        <input />
+        <input formControlName='inputName' />
       </label>
     </div>
   </div>
@@ -30,17 +29,17 @@
   <div class="form-group">
     <div class="form-control">
       <label>上次里程 :
-        <input />
+        <input formControlName='lastMile' />
       </label>
     </div>
     <div class="form-control">
       <label>現在里程 :
-        <input />
+        <input formControlName='mile' />
       </label>
     </div>
     <div class="form-control">
       <label>行駛里程 :
-        <input />
+        <input formControlName='drivenMile' />
       </label>
     </div>
   </div>
@@ -49,7 +48,7 @@
   <div class="form-group">
     <div class="form-control">
       <label>備註 :
-        <input />
+        <input formControlName='repairMemo' />
       </label>
     </div>
   </div>
