@@ -1,0 +1,8 @@
+<div class="container">
+    <mat-button-toggle-group class="button-toggle-group"  #group="matButtonToggleGroup">
+        <mat-button-toggle class="button-toggle" *ngFor="let cat of categories">
+            {{cat.name}}
+        </mat-button-toggle>
+    </mat-button-toggle-group>
+</div>
+
