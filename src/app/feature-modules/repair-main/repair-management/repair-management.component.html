@@ -1,8 +1,4 @@
-<!-- <div class="container">
-  <label>車牌號碼:</label>
-  <input value="HU7-683" readonly />
-</div> -->
-<app-repair-search></app-repair-search>
+<app-repair-search (searchHandler)="refresh()"></app-repair-search>
 
 <div class="container">
   <div class="menu">
@@ -13,6 +9,13 @@
     </ul>
   </div>
   <div class="content">
-    <router-outlet></router-outlet>
+    <ng-container *ngIf="service.licensePlateNo else empty">
+      <router-outlet></router-outlet>
+    </ng-container>
+    <ng-template #empty>
+      <div class="middle-center">
+        <span>尚無資料!</span>
+      </div>
+    </ng-template>
   </div>
 </div>

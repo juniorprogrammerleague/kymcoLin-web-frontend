@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RepairManagementService } from '../repair-management.service';
 
 @Component({
   selector: 'app-scooter-detail',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScooterDetailComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service: RepairManagementService) { }
 
   ngOnInit() {
   }
